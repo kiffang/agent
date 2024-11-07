@@ -93,7 +93,7 @@ ecommerce-ai-assistant/
 agent = ShopServiceAgent(api_key)
 
 # Regular interaction
-response = agent.think("What's the price of iPhone 15?")
+response = agent.think("What's the price of iPhone 16?")
 
 # Provide feedback for RL optimization
 agent.provide_feedback("Thanks, that was helpful!")

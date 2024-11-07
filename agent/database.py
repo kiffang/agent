@@ -3,7 +3,7 @@ from typing import Dict, List
 
 class ShopDatabase:
     def __init__(self):
-        # Mock products database
+        # Mock product database
         self.products_db = {
             "iPhone 15": {
                 "price": 5999,

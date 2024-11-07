@@ -11,7 +11,7 @@ def main():
     if not api_key:
         raise ValueError("Please set the OPENAI_API_KEY environment variable")
     
-    # Initialize the customer service agent
+    # Initialize the customer services agent
     agent = ShopServiceAgent(api_key)
     
     # Start the chat loop

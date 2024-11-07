@@ -1,5 +1,5 @@
 from typing import List, Dict
-import openai
+import openai 
 import json
 from .database import ShopDatabase
 from .rl_optimizer import RLOptimizer
@@ -228,7 +228,7 @@ class ShopServiceAgent:
         7. Proactively ask if users need anything else
         """
         
-        # Customize prompt based on response type
+        # Customize prompt based on response types
         if "brief" in response_type:
             base_prompt += "\nFocus on providing brief, direct answers."
         elif "detailed" in response_type:

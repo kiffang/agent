@@ -37,7 +37,7 @@ class RLOptimizer:
         # Simple state features (can be expanded)
         features = []
         
-        # Message length feature
+        # Message length features
         if last_user_msg:
             if len(last_user_msg) < 10:
                 features.append("short_query")
