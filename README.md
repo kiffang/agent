@@ -44,10 +44,7 @@ An intelligent customer service chatbot for e-commerce platforms, powered by Ope
 ```bash
 pip install -r requirements.txt
 ```
-3. Set the OpenAI API key in the `.env` file  
-```bash
-OPENAI_API_KEY=<your_openai_api_key>
-```
+3. Set the OpenAI API key 
 
 ## Project Structure
 
@@ -85,32 +82,3 @@ ecommerce-ai-assistant/
 - Learning rate: 0.1
 - Discount factor: 0.95
 - Exploration vs exploitation balance
-
-## Usage Examples
-
-```python
-# Initialize the agent
-agent = ShopServiceAgent(api_key)
-
-# Regular interaction
-response = agent.think("What's the price of iPhone 16?")
-
-# Provide feedback for RL optimization
-agent.provide_feedback("Thanks, that was helpful!")
-```
-
-Example conversations:
-```
-User: What's the price of iPhone 15?
-Assistant: The iPhone 15 is priced at $5,999. It comes in three storage options: 
-128GB, 256GB, and 512GB. Would you like to know about any specific variant?
-
-User: Show me phones between 5000 and 7000
-Assistant: Here are the phones in that price range:
-1. iPhone 15 ($5,999) - Latest A16 chip, great camera
-2. Huawei Mate60 ($6,999) - Flagship with Kirin chip
-
-User: Track my order ORDER2024030001
-Assistant: Your order has been shipped via SF Express (tracking: SF1234567890). 
-Current status: Out for delivery in Chaoyang District.
-```
